@@ -86,7 +86,6 @@ function borrarTodo() {
     resultadoMostrado = false;
     actualizarPantalla();
 }
-// ─── Operaciones ───────────────────────────────────────
 function manejarOperador(operador) {
     if (operadorAct !== null && valorAnt !== null && !resultadoMostrado) {
         calcularOperacion();
