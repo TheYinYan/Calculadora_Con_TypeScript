@@ -1,4 +1,4 @@
-# Calcualadora En TypeScript# 🧮 Calculadora en TypeScript
+# 🧮 Calculadora en TypeScript
 
 Una calculadora web sencilla construida con **TypeScript**, **HTML** y **CSS**, 
 compilada a JavaScript y servida como sitio estático.
