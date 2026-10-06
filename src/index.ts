@@ -1,11 +1,8 @@
-import { interval} from 'rxjs'; 
 import { Calculadora } from "./Calculadora.js";
 import {Time} from "./Time.js";
 
 const contenedorCal = document.querySelector(".calculadoras-container")!;
-const contenedorTiempo = document.querySelector(".tiempo-container")!;
 let contador = 0;
-let time = interval(1000);
 
 function crearCalculadora(): void {
   const id = `calc-${contador++}`;
@@ -23,4 +20,4 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#add-calc")?.addEventListener("click", crearCalculadora);
 });
 
-const subscription = time.subscribe((value) => {console.log(value);});
+new Time(".tiempo-container");

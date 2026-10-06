@@ -17,8 +17,8 @@ export class Calculadora {
   private borrarTodos!: HTMLButtonElement;
   private eliminar!: HTMLButtonElement;
 
-  constructor(selector: string) {
-    this.calculadora = document.querySelector<HTMLDivElement>(selector)!;
+  constructor(div: string) {
+    this.calculadora = document.querySelector<HTMLDivElement>(div)!;
     this.imprimirCalculadora();
     this.cachearElementos();
     this.asignarEventos();
