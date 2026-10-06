@@ -1,8 +1,5 @@
 import { interval, Observable, map } from 'rxjs';
 export class Time {
-    private time = interval(1000);
-    private fecha = new Date();
-
     private Time: HTMLDivElement;
 
     constructor(div: string) {
