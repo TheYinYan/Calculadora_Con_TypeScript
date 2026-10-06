@@ -8,7 +8,7 @@ export class Time {
     }
     private imprimirTime(): void {
         this.observableTime().subscribe(value => {
-            this.Time.textContent = value
+            this.Time.innerHTML = `<h1>La hora actual: ${value}</h1>`
         });
     }
 
