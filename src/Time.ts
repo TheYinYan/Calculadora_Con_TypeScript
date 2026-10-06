@@ -11,10 +11,11 @@ export class Time {
         this.observableTime().subscribe(value => {
             this.Time.textContent = value
         })
-     }
+    }
+    
     private observableTime(): Observable<string> {
         return interval(1000).pipe(
-            map(()=>{
+            map(() => {
                 const fecha = new Date;
                 const hh = fecha.getHours();
                 const mm = fecha.getMinutes();
