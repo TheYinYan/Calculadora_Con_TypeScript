@@ -15,6 +15,10 @@ body {
     align-items: center;
 }
 
+h1, h2{
+    text-align: center;
+}
+
 header h1 {
     font-family: 'Segment7Standard', monospace;
     text-transform: uppercase;
@@ -102,47 +106,6 @@ footer {
     cursor: not-allowed;
 }
 
-/* Colores del texto para cada operación  */
-.color-normal {
-    color: white;
-}
-
-.color-error {
-    color: red;
-}
-
-.color-suma {
-    color: #4bff4b;
-}
-
-.color-resta {
-    color: #ff884b;
-}
-
-.color-multiplica {
-    color: #ffbf00;
-}
-
-.color-divide {
-    color: #00c8ff;
-}
-
-.color-inverso {
-    color: #b084ff;
-}
-
-.color-cuadrado {
-    color: #ff4bd8;
-}
-
-.color-Raizcuadrada {
-    color: #00ffbf;
-}
-
-.igual{
-    background-color:  #ff9500;
-}
-
 .cronometro-container > .panel {
     font-family: monospace;
     font-size: 2rem;
@@ -159,7 +122,6 @@ footer {
     margin-top: 8px;
 }
 
-/* 👇 sin ">" porque los botones están dentro de .botonera */
 .cronometro-container .boton {
     padding: 8px 16px;
     border: none;
@@ -174,15 +136,10 @@ footer {
     cursor: not-allowed;
 }
 
-/* 👇 anidadas para no filtrar estilos globalmente */
-.cronometro-container .boton.iniciar {
-    background: #22c55e;
-}
 
-.cronometro-container .boton.detener {
-    background: #ef4444;
-}
-
-.cronometro-container .boton.reiniciar {
-    background: #3b82f6;
-}
+.cronometro-container .boton.iniciar          { background: #22c55e; }
+.cronometro-container .boton.iniciar:hover    { background: #16a34a; }
+.cronometro-container .boton.detener          { background: #ef4444; }
+.cronometro-container .boton.detener:hover    { background: #dc2626; }
+.cronometro-container .boton.reiniciar        { background: #3b82f6; }
+.cronometro-container .boton.reiniciar:hover  { background: #2563eb; }

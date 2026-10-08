@@ -30,4 +30,6 @@ export class Cronometro {
         this.reiniciarBtn = this.cronometro.querySelector<HTMLButtonElement>('.reiniciar')!;
     }
 
+    
+
 }
