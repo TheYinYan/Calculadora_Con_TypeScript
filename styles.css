@@ -70,7 +70,7 @@ footer {
 }
 
 .doble {
-  grid-column: span 2;
+    grid-column: span 2;
 }
 
 .boton {
@@ -83,7 +83,8 @@ footer {
     cursor: pointer;
 }
 
-.boton:hover, .igual:hover {
+.boton:hover,
+.igual:hover {
     background-color: #3a3a3a;
 }
 
@@ -96,13 +97,13 @@ footer {
     background-color: #4b4bff;
 }
 
-.deshabilitado{
+.deshabilitado {
     opacity: 0.4;
     cursor: not-allowed;
 }
 
 /* Colores del texto para cada operación  */
-.color-normal{
+.color-normal {
     color: white;
 }
 
@@ -114,7 +115,7 @@ footer {
     color: #4bff4b;
 }
 
-.color-resta{
+.color-resta {
     color: #ff884b;
 }
 
@@ -140,4 +141,48 @@ footer {
 
 .igual{
     background-color:  #ff9500;
+}
+
+.cronometro-container > .panel {
+    font-family: monospace;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: #000;
+    color: #0f0;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.cronometro-container > .botonera {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+/* 👇 sin ">" porque los botones están dentro de .botonera */
+.cronometro-container .boton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cronometro-container .boton:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* 👇 anidadas para no filtrar estilos globalmente */
+.cronometro-container .boton.iniciar {
+    background: #22c55e;
+}
+
+.cronometro-container .boton.detener {
+    background: #ef4444;
+}
+
+.cronometro-container .boton.reiniciar {
+    background: #3b82f6;
 }

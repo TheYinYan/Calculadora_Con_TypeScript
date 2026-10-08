@@ -1,4 +1,5 @@
 import { Calculadora } from "./Calculadora.js";
+import { Cronometro } from "./Cronometro.js";
 import {Time} from "./Time.js";
 
 const contenedorCal = document.querySelector(".calculadoras-container")!;
@@ -21,3 +22,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 new Time(".tiempo-container");
+
+new Cronometro(".cronometro-container");
