@@ -54,8 +54,7 @@ export class Cronometro {
     let oldTiempo = new Date().getTime();
     this.suscripcion = interval(1).subscribe(() => {
       let newTiempo = new Date().getTime();
-      this.tiempo += newTiempo - oldTiempo;
-      oldTiempo = newTiempo;
+      this.tiempo = newTiempo - oldTiempo;
       this.mostrarTiempo();
     });
   }
