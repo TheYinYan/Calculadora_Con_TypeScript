@@ -16,8 +16,10 @@ export class Time {
         return interval(1000).pipe(
             map(() => {
                 const fecha = new Date();
-                return `${fecha.getHours()}:${fecha.getMinutes()}:${fecha.getSeconds()}`;
+                return `${String(fecha.getHours()).padStart(2, '0')}:${String(fecha.getMinutes()).padStart(2, '0')}:${String(fecha.getSeconds()).padStart(2, '0')}`;
             })
         )
     }
+
+    
 }

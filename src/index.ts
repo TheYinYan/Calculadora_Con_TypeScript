@@ -22,3 +22,4 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 new Time(".tiempo-container");
+new Cronometro(".cronometro-container");

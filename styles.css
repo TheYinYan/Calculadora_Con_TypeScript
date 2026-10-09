@@ -15,7 +15,8 @@ body {
     align-items: center;
 }
 
-h1, h2{
+h1,
+h2 {
     text-align: center;
 }
 
@@ -87,6 +88,14 @@ footer {
     cursor: pointer;
 }
 
+
+.calculadoras-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 .boton:hover,
 .igual:hover {
     background-color: #3a3a3a;
@@ -106,7 +115,7 @@ footer {
     cursor: not-allowed;
 }
 
-.cronometro-container > .panel {
+.cronometro-container>.panel {
     font-family: monospace;
     font-size: 2rem;
     padding: 1rem;
@@ -116,7 +125,7 @@ footer {
     text-align: center;
 }
 
-.cronometro-container > .botonera {
+.cronometro-container>.botonera {
     display: flex;
     gap: 8px;
     margin-top: 8px;
@@ -137,9 +146,26 @@ footer {
 }
 
 
-.cronometro-container .boton.iniciar          { background: #22c55e; }
-.cronometro-container .boton.iniciar:hover    { background: #16a34a; }
-.cronometro-container .boton.detener          { background: #ef4444; }
-.cronometro-container .boton.detener:hover    { background: #dc2626; }
-.cronometro-container .boton.reiniciar        { background: #3b82f6; }
-.cronometro-container .boton.reiniciar:hover  { background: #2563eb; }
+.cronometro-container .boton.iniciar {
+    background: #22c55e;
+}
+
+.cronometro-container .boton.iniciar:hover {
+    background: #16a34a;
+}
+
+.cronometro-container .boton.detener {
+    background: #ef4444;
+}
+
+.cronometro-container .boton.detener:hover {
+    background: #dc2626;
+}
+
+.cronometro-container .boton.reiniciar {
+    background: #3b82f6;
+}
+
+.cronometro-container .boton.reiniciar:hover {
+    background: #2563eb;
+}
