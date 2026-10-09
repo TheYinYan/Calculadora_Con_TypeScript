@@ -66,8 +66,8 @@ export class Cronometro {
 
   private reiniciarCronometro(): void {
     this.detenerCronometro();
-    this.tiempo = 0;
     this.mostrarTiempo();
+    this.iniciarCronometro();
   }
 
   private mostrarTiempo(): void {
